@@ -1,5 +1,7 @@
 /* Reset */
 
+@import "blog";
+
 $subtitlebgcolour:#114e60;
 $fontMontserrat: 'Montserrat', sans-serif;
 $fontVerdana: Verdana, Geneva, Tahoma, sans-serif;
@@ -480,7 +482,7 @@ footer ul li a{
 
 
 /* Blog */
-.post{
+/* .post{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -498,3 +500,4 @@ footer ul li a{
 }
 
 
+ */
