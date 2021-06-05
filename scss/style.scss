@@ -6,6 +6,16 @@ $subtitlebgcolour:#114e60;
 $fontMontserrat: 'Montserrat', sans-serif;
 $fontVerdana: Verdana, Geneva, Tahoma, sans-serif;
 
+@mixin flexRow ($display, $direction){
+    display:$display;
+    flex-direction:$direction;
+
+}
+
+@mixin flexColumn($display, $direction){
+    display: $display;
+    flex-direction: $direction;
+}
 *{
     margin: 0;
     padding: 0;
@@ -16,9 +26,8 @@ $fontVerdana: Verdana, Geneva, Tahoma, sans-serif;
 
 /* BODY */
 
-body{   
-    display: flex;
-    flex-direction: column;
+body{
+    @include flexColumn(flex,column );   
     justify-content: center;
     align-items: center;
     background-color:#f4eee8;
@@ -40,8 +49,7 @@ header{
 
 nav{
     background-color: #325288;
-    display: flex;
-    flex-direction: row;
+    @include flexRow(flex,row );
     width: 100%;
     justify-content: space-between;
 }
@@ -62,8 +70,7 @@ nav img{
 nav ul{
     width: 60vw;
     height: 10vh;
-    display: flex;
-    flex-direction: row;
+    @include flexRow(flex,row );
     justify-content: center;
     align-items: center;
     font-weight: bold;
@@ -250,8 +257,7 @@ div{
 /* Contenedor de cards  */
 /* La doc de bootstrap dice que no son responsibe */
 .contenedor{
-    display: flex;
-    flex-direction: row;
+    @include flexRow(flex,row );
     width: 90vw;
     justify-content: space-around;
     align-items: center;
@@ -276,8 +282,7 @@ div{
 
     .contenedor2{
         visibility: visible;
-        display: flex;
-        flex-direction: row;
+        @include flexRow(flex,row );
     }
     h1{
         font-size: 1.5em;
@@ -308,8 +313,7 @@ div{
 
     .employee{
         width: 50%;
-        display: flex;
-        flex-direction: column;
+        @include flexColumn(flex,column );   
     }
   }
   
@@ -373,8 +377,7 @@ div{
 }
 
 .employee{
-    display: flex;
-    flex-direction: row;
+    @include flexRow(flex,row );
     margin-top: 20px;
     margin-bottom: 20px;
     width: 90vw;
@@ -392,8 +395,7 @@ div{
 /* Reel de galería */
 
 #reel{
-    display: flex;
-    flex-direction: column;
+    @include flexColumn(flex,column );   
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 20px 20px 20px 20px;
@@ -413,8 +415,7 @@ div{
 
 /* Formulario de contacto */
 .contactUs{
-    display: flex;
-    flex-direction: column;
+    @include flexColumn(flex,column );   
     width: 20vw;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-style: oblique;
@@ -424,8 +425,7 @@ div{
 
 /* Footer */
 footer{
-    display: flex;
-    flex-direction: column;
+    @include flexColumn(flex,column );   
     width: 100%;
     background-color: #325288;
     color: white;
@@ -438,21 +438,18 @@ footer{
 }
 
 .nuestrasRedes{
-    display: flex;
-    flex-direction: row;
+    @include flexRow(flex,row );
 }
 
 .linkARedes{
-    display: flex;
-    flex-direction: row;
+    @include flexRow(flex,row );
     margin-left: 20px;
     justify-content: space-around;
 
 }
 footer img{
     margin-left: 20px;
-    display: flex;
-    flex-direction: row;
+    @include flexRow(flex,row );
     height: auto;
     width: 20px;
     background-color: white;
@@ -473,8 +470,7 @@ footer ul li a{
 }
 
 .copyright{
-    display: flex;
-    flex-direction: row;
+    @include flexRow(flex,row );
     align-self: flex-end;
     color: white;
     margin-right: 20px;
