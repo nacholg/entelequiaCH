@@ -1,0 +1,6 @@
+
+# HTID:17637184: DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES BELOW
+php_value display_errors 1
+DirectoryIndex index.html
+ErrorDocument 404 https://entelequiach.000webhostapp.com/
+# DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES ABOVE HTID:17637184:

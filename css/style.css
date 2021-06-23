@@ -572,6 +572,23 @@ footer ul li a {
   margin-right: 20px;
 }
 
+.p404 {
+  font-size: 1em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.soLong {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+@media screen and (min-width: 375px) {
+  .soLong {
+    width: 240px;
+    height: 135px;
+  }
+}
+
 /* Blog */
 /* .post{
     display: flex;

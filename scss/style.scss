@@ -471,6 +471,22 @@ footer ul li a{
     margin-right: 20px;
 }
 
+.p404{
+    font-size: 1em;
+    font-family: $fontVerdana;
+}
+
+.soLong{
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+@media screen and (min-width: 375px) {
+    .soLong {
+      width: 240px;
+      height: 135px;
+    }
+  }
 
 /* Blog */
 /* .post{
