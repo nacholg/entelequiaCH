@@ -200,18 +200,11 @@ h4{
     word-spacing: 4px;
 }
 
-/* Oportunamente sera reemplazado */
-/* .divCarrousel{
-    width: 100%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border-bottom: solid 2px;
-}
-.divCarrousel img{
-    width: 100%;
+
+.carrousel {
     margin-bottom: 30px;
 }
- */
+ 
 /* Grid oportunamente será reemplazado por Cards */
 .gridQuote{
     margin-top: 30px;
@@ -374,6 +367,8 @@ div{
     border-style: solid;
     background-color: #114e60;
     justify-content: space-around;
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
 
 .employee{
