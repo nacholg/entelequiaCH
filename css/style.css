@@ -503,6 +503,10 @@ div {
   font-family: Verdana, Geneva, Tahoma, sans-serif !important;
 }
 
+.card-deck {
+  margin-bottom: 2em;
+}
+
 legend {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1em;
