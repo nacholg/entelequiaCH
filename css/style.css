@@ -582,11 +582,20 @@ footer ul li a {
   margin-bottom: 2em;
 }
 
+.sumate {
+  color: black;
+}
+
 @media screen and (max-width: 375px) {
   .soLong {
     width: 240px;
     height: 135px;
   }
+}
+
+.card img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 /* Blog */
