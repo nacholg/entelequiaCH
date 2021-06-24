@@ -175,7 +175,9 @@ h2{
     }
 }
 
-
+.divWhoWeAre{
+    @include flexColumn(flex,row )
+}
 .divWhoWeAre__subtitle{
 	background-color: $subtitlebgcolour;
     color: white;
@@ -303,10 +305,17 @@ div{
         visibility: visible;
         color: black;
     }
+    
+   
+
 
     .employee{
         width: 50%;
         @include flexColumn(flex,column );   
+    }
+    
+    .employee__hijo1{
+        width: 50%;
     }
   }
   
@@ -409,6 +418,10 @@ div{
 
 
 /* Formulario de contacto */
+
+.divFormulario{
+    @include flexColumn(flex,column )
+}
 .contactUs{
     @include flexColumn(flex,column );   
     width: 20vw;
@@ -492,7 +505,7 @@ footer ul li a{
     }
   }
 
-  .card img:hover{
+  .card:hover{
     transform:scale(1.2);
 }
 

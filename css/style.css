@@ -220,6 +220,16 @@ h2 {
   }
 }
 
+.divWhoWeAre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
 .divWhoWeAre__subtitle {
   background-color: #114e60;
   color: white;
@@ -254,10 +264,7 @@ h4 {
   margin-top: 30px;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "gridTitle gridTitle gridTitle gridTitle"
- "services services services services"
- "description description description description"
- "contactQuote contactQuote contactQuote contactQuote";
+      grid-template-areas: "gridTitle gridTitle gridTitle gridTitle" "services services services services" "description description description description" "contactQuote contactQuote contactQuote contactQuote";
   -ms-grid-columns: auto;
       grid-template-columns: auto;
   -ms-grid-rows: 1fr 1fr 1fr 1fr;
@@ -370,6 +377,9 @@ div {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .employee__hijo1 {
+    width: 50%;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -477,6 +487,16 @@ div {
 }
 
 /* Formulario de contacto */
+.divFormulario {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .contactUs {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -507,8 +527,8 @@ footer {
   font-size: small;
   margin-right: 100px;
   margin-left: 100px;
-/*   background: -webkit-gradient(linear, right top, left top, from(#5b86e5), to(#325288));
- */  background: linear-gradient(to left, #5b86e5, #325288);
+  background: -webkit-gradient(linear, right top, left top, from(#5b86e5), to(#325288));
+  background: linear-gradient(to left, #5b86e5, #325288);
 }
 
 .nuestrasRedes {
@@ -596,7 +616,7 @@ footer ul li a {
   }
 }
 
-.card img:hover {
+.card:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
