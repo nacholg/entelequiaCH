@@ -254,7 +254,10 @@ h4 {
   margin-top: 30px;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "gridTitle gridTitle gridTitle gridTitle" "services services services services" "description description description description" "contactQuote contactQuote contactQuote contactQuote";
+      grid-template-areas: "gridTitle gridTitle gridTitle gridTitle"
+ "services services services services"
+ "description description description description"
+ "contactQuote contactQuote contactQuote contactQuote";
   -ms-grid-columns: auto;
       grid-template-columns: auto;
   -ms-grid-rows: 1fr 1fr 1fr 1fr;
@@ -504,8 +507,8 @@ footer {
   font-size: small;
   margin-right: 100px;
   margin-left: 100px;
-  background: -webkit-gradient(linear, right top, left top, from(#5b86e5), to(#325288));
-  background: linear-gradient(to left, #5b86e5, #325288);
+/*   background: -webkit-gradient(linear, right top, left top, from(#5b86e5), to(#325288));
+ */  background: linear-gradient(to left, #5b86e5, #325288);
 }
 
 .nuestrasRedes {
