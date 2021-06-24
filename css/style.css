@@ -495,6 +495,17 @@ div {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 2em;
+}
+
+.contacto {
+  font-family: Verdana, Geneva, Tahoma, sans-serif !important;
+}
+
+legend {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1em;
 }
 
 .contactUs {

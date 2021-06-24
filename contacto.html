@@ -76,44 +76,42 @@
     <!--formulario de contacto-->
 
     <div class="divFormulario">
-        <form class="contactUs">  
-            <fieldset>
-                <legend>Contactanos</legend>
-                <label>Nombre
-                    <input type="text" name="Nombre">
-                </label>
-                <br>
-                <label>Apellido
-                <input type="text" name="Apellido">
-                </label>
-                <br>
-                <label>Email
-                    <input type="text" name="Email">
-                </label>
-                <br>
-                <label>Que necesitas?       
-                    <select name="Servicios">
-                        <option value="Campañas">Campañas</option>
-                        <option value="Redes">Community Manager</option>
-                        <option value="Contenido">Contenido</option>
-                        <option value="Email Marketing">Email Marketing</option>
-                    </select>
-                </label>
-                
-                <br>
-                
-                <div class="contactForm"> Quiero suscribirme al newsletter. </div>
-                <input type="checkbox" name="newsletter"  value="si" checked>  <!--dejo chequeado si por default-->                        
-                 <br>
-                 <br>
-                 <textarea name="formulario"  cols="30" rows="10">Escribi acá tu consulta</textarea>
-                 <br>
-                 <input type="submit" value="Enviar formulario">
-                 <input type="reset" value="Limpiar formulario">
-                
-            </fieldset>
+       
+        <form class="contacto">
+          <div class="form-group">
+            <legend>Contactanos</legend>
+            <label for="name">Nombre</label>
+            <input type="text" class="form-control" id="name" aria-describedby="name">
+          </div>
+          <div class="form-group">
+           <label for="lastName">Apellido</label>
+           <input type="text" class="form-control" id="lastName" aria-describedby="lastName">
+          </div>
+
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <small id="emailHelp" class="form-text text-muted">Nunca vamos a compartir tus datos personales</small>
+          </div>
+          
+
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="Si" id="defaultCheck1" checked>
+            <label class="form-check-label" for="defaultCheck1">
+             Quiero suscribirme al Newsleetter
+            </label>
+          </div>
+          <div class="form-group">
+            <label for="Textarea1"></label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">Escribí aca tu consulta</textarea>
+          </div>
+      
+          <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="reset" class="btn btn-primary">Limpiar formulario</button>
         </form>
     
+
+        
     </div>
 
    <!--Footer-->

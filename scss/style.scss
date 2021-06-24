@@ -420,7 +420,19 @@ div{
 /* Formulario de contacto */
 
 .divFormulario{
-    @include flexColumn(flex,column )
+    @include flexColumn(flex,column );
+    font-family:$fontMontserrat;
+    margin-bottom: 2em;
+   
+}
+
+.contacto{
+    font-family: $fontVerdana !important;
+}
+
+legend{
+    font-family: $fontVerdana;
+    font-size: 1em;
 }
 .contactUs{
     @include flexColumn(flex,column );   
