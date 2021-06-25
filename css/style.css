@@ -261,22 +261,6 @@ h4 {
   margin-bottom: 30px;
 }
 
-/* Grid oportunamente será reemplazado por Cards */
-.gridQuote {
-  margin-top: 30px;
-  display: -ms-grid;
-  display: grid;
-      grid-template-areas: "gridTitle gridTitle gridTitle gridTitle" "services services services services" "description description description description" "contactQuote contactQuote contactQuote contactQuote";
-  -ms-grid-columns: auto;
-      grid-template-columns: auto;
-  -ms-grid-rows: 1fr 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr;
-  -webkit-column-gap: 10px;
-          column-gap: 10px;
-  row-gap: 10px;
-  height: 50vh;
-}
-
 /* Estilos del index */
 section .description ol, li {
   color: #114e60;
@@ -404,31 +388,6 @@ div {
         align-content: flex-start;
     visibility: visible;
   }
-}
-
-/* Divs para Mobile */
-.divInfo {
-  visibility: hidden;
-}
-
-.divInfo {
-  visibility: hidden;
-  padding-top: 14px;
-  padding-bottom: 5px;
-  background-color: white;
-  color: black;
-  font-family: 'Work Sans', sans-serif;
-  font-weight: 900;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.divInfo h4 {
-  padding-top: 14px;
-  padding-bottom: 5px;
-  background-color: white;
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 .divWhoWeAre {
