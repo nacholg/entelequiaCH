@@ -322,7 +322,11 @@ div{
     .employee__hijo1{
         width: 50%;
         font-family: $fontVerdana;
-        text-align: justify;
+        text-align: left;
+    }
+
+    .employee__hijo1__texto{
+        word-wrap: initial;
     }
   }
   
@@ -388,7 +392,7 @@ div{
 }
 
 .employee{
-    @include flexRow(flex,row );
+    @include flexColumn(flex,column );
     margin-top: 20px;
     margin-bottom: 20px;
     width: 90vw;
