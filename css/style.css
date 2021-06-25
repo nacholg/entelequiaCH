@@ -1,5 +1,34 @@
 @charset "UTF-8";
 /* Reset */
+/* Blog */
+.post {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 20px;
+}
+
+.divHijo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px 20px 20px 20px;
+}
 
 * {
   margin: 0;
@@ -237,10 +266,7 @@ h4 {
   margin-top: 30px;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "gridTitle gridTitle gridTitle gridTitle"
- "services services services services"
- "description description description description"
- "contactQuote contactQuote contactQuote contactQuote";
+      grid-template-areas: "gridTitle gridTitle gridTitle gridTitle" "services services services services" "description description description description" "contactQuote contactQuote contactQuote contactQuote";
   -ms-grid-columns: auto;
       grid-template-columns: auto;
   -ms-grid-rows: 1fr 1fr 1fr 1fr;
@@ -431,7 +457,7 @@ div {
 
 .employee img {
   height: auto;
-  width: 80px;
+  width: 10em;
 }
 
 .employee img:hover {
@@ -439,37 +465,6 @@ div {
           transform: scale(1.2);
 }
 
-/* Blog */
-.post {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  margin-top: 20px;
-}
-
-.divHijo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  padding: 20px 20px 20px 20px;
-}
-
-  
 /* Reel de galería */
 #reel {
   display: -webkit-box;
