@@ -1,34 +1,5 @@
 @charset "UTF-8";
 /* Reset */
-/* Blog */
-.post {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  margin-top: 20px;
-}
-
-.divHijo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  padding: 20px 20px 20px 20px;
-}
 
 * {
   margin: 0;
@@ -64,7 +35,7 @@ header {
 }
 
 .navbar-dark {
-  color: #325288;
+  color: #114e60;
 }
 
 nav {
@@ -85,6 +56,7 @@ nav {
 nav img {
   width: 100px;
   height: auto;
+  border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -180,6 +152,7 @@ nav ul a {
   margin-top: 20px;
   margin-bottom: 20px;
   border-bottom: solid 4px;
+  text-align: center;
 }
 
 h2 {
@@ -264,7 +237,10 @@ h4 {
   margin-top: 30px;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "gridTitle gridTitle gridTitle gridTitle" "services services services services" "description description description description" "contactQuote contactQuote contactQuote contactQuote";
+      grid-template-areas: "gridTitle gridTitle gridTitle gridTitle"
+ "services services services services"
+ "description description description description"
+ "contactQuote contactQuote contactQuote contactQuote";
   -ms-grid-columns: auto;
       grid-template-columns: auto;
   -ms-grid-rows: 1fr 1fr 1fr 1fr;
@@ -372,13 +348,15 @@ div {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   .employee__hijo1 {
     width: 50%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
   }
 }
 
@@ -461,6 +439,37 @@ div {
           transform: scale(1.2);
 }
 
+/* Blog */
+.post {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 20px;
+}
+
+.divHijo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px 20px 20px 20px;
+}
+
+  
 /* Reel de galería */
 #reel {
   display: -webkit-box;
@@ -473,6 +482,15 @@ div {
   margin-top: 20px;
   margin-bottom: 20px;
   padding: 20px 20px 20px 20px;
+}
+
+.jumbotron {
+  background: #f4eee8;
+}
+
+.btn {
+  background-color: #114e60;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* Boton Sumate */
@@ -613,6 +631,11 @@ footer ul li a {
 .p404 {
   font-size: 1em;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.dwight a {
+  color: inherit;
+  text-decoration: none;
 }
 
 .soLong {
